@@ -31,11 +31,8 @@ for (let i = 0; i < themeBtn.length; i++) {
       // it toggles classes between `light` & `dark` for all `theme-btn`.
       themeBtn[i].classList.toggle('light');
       themeBtn[i].classList.toggle('dark');
-
     }
-
   })
-
 }
 
 // scroll up button

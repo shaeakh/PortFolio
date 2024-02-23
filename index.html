@@ -44,12 +44,11 @@
         <div class="flex-wrapper">
           <ul class="desktop-nav">
             <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link" onclick="scrollToDown()" >About</a></li>
+            <li><a href="#" class="nav-link" onclick="scrollToDown()" >About Me</a></li>
             <li><a href="#" class="nav-link">Projects</a></li>
             <li><a href="#" class="nav-link">Achievements</a></li>
             <li><a href="#" class="nav-link">Blogs</a></li>
-            <li><a href="#" class="nav-link">Contacts</a></li>
-            <li><a href="#" class="nav-link">Interests</a></li>      
+            <li><a href="#" class="nav-link">Contacts</a></li>             
           </ul>
 
           <button class="theme-btn theme-btn-desktop light">
@@ -72,8 +71,7 @@
               <li><a href="#" class="nav-link">Projects</a></li>
               <li><a href="#" class="nav-link">Achievements</a></li>
               <li><a href="#" class="nav-link">Blogs</a></li>
-              <li><a href="#" class="nav-link">Contacts</a></li>
-              <li><a href="#" class="nav-link">Interests</a></li>      
+              <li><a href="#" class="nav-link">Contacts</a></li>              
             </ul>
           </div>
 
@@ -368,29 +366,74 @@
     - #FOOTER
   -->
 
-  <footer>
-    <h1  classname="Aboutme" style="text-align: center;">About me</h1>
+  <footer style="background-color: #1a212d;" >    
+    <h1  classname="Aboutme" style="text-align:center; color: #ff7613;">About me</h1>
     <hr style="width: 80%; margin: 0 auto  ;">
-    <div class="container">
-      <div class="wrapper">
-        <p class="footer-title">Socials</p>
+    <div class="container" style="display: flex; flex-direction: row;  ">
+      <div class="wrapper" style="width: 40%;">
+        <div class="education">
+          <h3 class="title">Education</h3>
+          <div class="eduItem">            
+            <h4 class="itemTitle" >B.Sc in Software Engineering</h4>
+            <p class="preTitle">2021-Present</p>
+            <p class="itemSubtitle">Shahjalal University of Science and Technology</p>
 
-        <ul>
-          <li>
-            <a href="#" class="footer-link"
-              target="_blank">LinkdIn</a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank" class="footer-link">GitHub</a>
-          </li>
-
-          <li>
-            <a href="#" target="_blank" class="footer-link">Twitter</a>
-          </li>
-        </ul>
+          </div>
+          <div class="eduItem">              
+              <h4 class="itemTitle">HSC (Science)</h4>
+              <p class="preTitle">2018-2020</p>
+              <p class="itemSubtitle">Abdul Kadir Mollah City College,Narsingdi</p>
+          </div> 
+          <div class="eduItem">              
+            <h4 class="itemTitle">SSC (Science)</h4>
+            <p class="preTitle">2016-2018</p>
+            <p class="itemSubtitle">Annada Govt. High School, Brahmanbaria</p>
+          </div>          
+        </div>
       </div>
+      <div class="wrapper" style="width: 30%;" >
+        <div class="education">
+          <h3 class="title">Interests</h3>
+          <h4 class="itemTitle" style="margin-top: 2rem;">Open Source Community</h4>
+          <h4 class="itemTitle" style="margin-top: 1rem;">Cyber Security</h4>
+          <h4 class="itemTitle" style="margin-top: 1rem;">DevOps</h4>
+          <h4 class="itemTitle" style="margin-top: 1rem;">Artificial Intelligence</h4>
+          <h4 class="itemTitle" style="margin-top: 1rem;">Blockchain</h4>
+          <h4 class="itemTitle" style="margin-top: 1rem;">Stock Exchange</h4>
+          <h4 class="itemTitle" style="margin-top: 1rem;">Gamming</h4>
+          <h4 class="itemTitle" style="margin-top: 1rem;">Farming and Fishing</h4>                              
+        </div>
+      </div>      
+      <div class="wrapper" style="width: 30%;" >
+        <div class="career">
+          <h3 class="title">Career</h3>
+
+            <div class="eduItem">              
+              <h4 class="itemTitle">Intern</h4>
+              <p class="preTitle">Landing an internship is a top priority for me, fueling my future career ambitions.              </p>              
+            </div>
+            <div class="careerItem">              
+              <h4 class="itemTitle">Game Developer</h4>
+              <p class="preTitle">Crafting captivating games and leaving my mark on the industry fuels my journey to become a legendary game developer.</p>              
+            </div>
+            <div class="careerItem">              
+              <h4 class="itemTitle">Software Engineer</h4>
+              <p class="preTitle">
+                Software engineering greatness awaits, fueling my journey to become a coding luminary.</p>              
+            </div>
+            <div class="careerItem">              
+              <h4 class="itemTitle">Cloud Engineer</h4>
+              <p class="preTitle">Shaping the future through cloud mastery: my journey to becoming a top-tier Cloud Engineer.</p>              
+            </div>
+            <div class="careerItem">              
+              <h4 class="itemTitle">Solution Architecture </h4>
+              <p class="preTitle">Shaping technology solutions that make a difference: my journey to becoming a stellar Solution Architect.</p>              
+            </div>
+
+        </div>
+      </div>      
     </div>    
+    
   </footer>
 
   <!--- custom js link-->
