@@ -845,7 +845,7 @@
                 You can give me a message here. I will be very happy to help you.
               </p>
 
-              <form >
+              <form name="submit-to-google-sheet">
                 <input type="text" name="name" placeholder="Your Name" required />
                 <input type="email" name="email" placeholder="Email Address" required />
                 <input type="text" name="Subject" placeholder="Your topic" required />
@@ -853,6 +853,7 @@
 
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
+              <span id="msg"></span>
             </div>
           </div>
         </div>
@@ -943,6 +944,23 @@
   <!--- ionicon link-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby4xnl9axI3yyMDt_nzKabzcXt_VD0g1d5sduzK3fQ6xYlIsg2QgTbtaREKs5lNLb36Iw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
-
 </html>
