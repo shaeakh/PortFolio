@@ -76,8 +76,32 @@ a {
   text-decoration: none;
 }
 
-li {
+.post li {
   list-style: none;
+}
+
+.post li:nth-child(3) ~ li {
+  display: none;
+}
+
+.extendbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  width: 180px;
+  height: 52px;
+  text-transform: uppercase;
+  background-color:  var(--accent);
+  color: white;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: all .3s ease-out;  
+}
+
+.extendbtn:hover{
+    background-color:rgb(221, 217, 217);
+    color: black;
 }
 
 img,
