@@ -15,7 +15,7 @@ extend.addEventListener('click', (e)=>{
     setTimeout(function(){
       e.target.classList.remove('show-loader');
       if(projectList[i]){
-        projectList[i].style.display = 'flex';        
+        projectList[i].style.display = 'flex';
       }
     }, )
   }
